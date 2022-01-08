@@ -47,8 +47,8 @@ function calculatePendulumVelocity() {
   a2_v += a2_a;
   a1 += a1_v;
   a2 += a2_v;
-  a1_v *= 0.9999;
-  a2_v *= 0.9999;
+  a1_v *= 0.9980;
+  a2_v *= 0.9980;
 }
 
 function calculatePendulumPosition() {
@@ -96,10 +96,10 @@ function setup() {
   colorMode(RGB, 255, 255, 255, 1);
   pixelDensity(1);
 
-  r1 = random(150, 200);
-  r2 = random(200, 250);
-  m1 = random(20, 25);
-  m2 = random(40, 50);
+  r1 = random(40, 250);
+  r2 = random(40, 250);
+  m1 = random(20, 50);
+  m2 = random(20, 50);
 
   cx = width / 2;
   cy = height / 2 - 150;
